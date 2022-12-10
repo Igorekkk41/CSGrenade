@@ -70,6 +70,10 @@ h1, h2, h3, h4, h5, h6 {
   flex: 1 1 auto;
   height: 100%;
 }
+.wrapper .main h1 {
+  font-weight: 400;
+  font-size: 30px;
+}
 
 .intro {
   -o-object-fit: hidden;
@@ -98,6 +102,13 @@ body._lock {
   overflow: hidden;
 }
 
+/* -----------------------FONTS--------------------------------------------------- */
+@font-face {
+  font-family: Roboto-Regular;
+  font-weight: 400;
+  src: url(../static/fonts/Roboto-Regular.ttf);
+}
+/* -------------------------------------------------------------------------- */
 /* -------СКРОЛ БАР------------------------------------------------------------------- */
 ::-webkit-scrollbar-thumb {
   background: #d4d4d4;

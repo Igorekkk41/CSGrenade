@@ -6,6 +6,10 @@
     .main{
         flex: 1 1 auto;
         height: 100%;
+        h1{
+            font-weight: 400;
+            font-size: 30px;
+        }
     }
 }
 .intro{
@@ -28,12 +32,18 @@
     padding: 0px 20px;
 }
 body{
-    
+
 }
 body._lock{
     overflow: hidden;
 }
-
+/* -----------------------FONTS--------------------------------------------------- */
+@font-face {
+    font-family: Roboto-Regular;
+    font-weight: 400;
+    src: url(../static/fonts/Roboto-Regular.ttf);
+}
+/* -------------------------------------------------------------------------- */
 /* -------СКРОЛ БАР------------------------------------------------------------------- */
 // ::-webkit-scrollbar{
 //     width: 15px;
