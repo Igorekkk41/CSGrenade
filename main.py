@@ -2,8 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-print('Hello World!')
-print('Fuck World!')
 
 @app.route("/")
 @app.route("/index")
