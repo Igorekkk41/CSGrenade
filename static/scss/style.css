@@ -107,7 +107,7 @@ body._lock {
 @font-face {
   font-family: "Roboto-Regular";
   font-weight: 400;
-  src: url(../static/fonts/Roboto-Regular.ttf);
+  src: url(../fonts/Roboto-Regular.ttf);
 }
 /* -------------------------------------------------------------------------- */
 /* -------СКРОЛ БАР------------------------------------------------------------------- */
