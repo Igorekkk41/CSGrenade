@@ -71,8 +71,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
 }
 .wrapper .main h1 {
-  font-weight: 400;
+  font-family: "Roboto-Regular";
   font-size: 30px;
+  color: #fff;
 }
 
 .intro {
@@ -104,7 +105,7 @@ body._lock {
 
 /* -----------------------FONTS--------------------------------------------------- */
 @font-face {
-  font-family: Roboto-Regular;
+  font-family: "Roboto-Regular";
   font-weight: 400;
   src: url(../static/fonts/Roboto-Regular.ttf);
 }

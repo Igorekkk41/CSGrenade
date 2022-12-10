@@ -7,8 +7,9 @@
         flex: 1 1 auto;
         height: 100%;
         h1{
-            font-weight: 400;
+            font-family: 'Roboto-Regular';
             font-size: 30px;
+            color: #fff;
         }
     }
 }
@@ -39,7 +40,7 @@ body._lock{
 }
 /* -----------------------FONTS--------------------------------------------------- */
 @font-face {
-    font-family: Roboto-Regular;
+    font-family: 'Roboto-Regular';
     font-weight: 400;
     src: url(../static/fonts/Roboto-Regular.ttf);
 }
