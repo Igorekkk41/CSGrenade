@@ -109,6 +109,16 @@ body._lock {
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf);
 }
+@font-face {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  font-weight: 700;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
 /* -------------------------------------------------------------------------- */
 /* -------СКРОЛ БАР------------------------------------------------------------------- */
 ::-webkit-scrollbar-thumb {
