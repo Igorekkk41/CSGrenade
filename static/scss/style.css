@@ -88,6 +88,8 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+  filter: blur(15px) brightness(0.3);
+  transform: scale(1.05);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -167,7 +169,6 @@ body._lock {
 
 .header__logo {
   width: 65px;
-  border-radius: 50%;
   z-index: 3;
   position: relative;
 }

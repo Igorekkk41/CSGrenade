@@ -22,7 +22,20 @@
         left: 0;
         object-fit: cover;
         z-index: -1;
+        filter: blur(15px) brightness(0.3);
+
+        transform: scale(1.05);
     }
+    // .blackout{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: #0f0202;
+    //     z-index: 0;
+    // }
+    
 }
 /* -------------------------------------------------------------------------- */
 [class*="__container"]{
@@ -101,7 +114,7 @@ $accentColor: #003459;
 }
 .header__logo {
     width: 65px;
-    border-radius: 50%;
+    // border-radius: 50%;
     z-index: 3;
     position: relative;
 }

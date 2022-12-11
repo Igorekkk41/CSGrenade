@@ -16,10 +16,10 @@ particlesJS('snow-fall',
   {
     "particles": {
       "number": {
-        "value": 300,
+        "value": 500,
         "density": {
           "enable": true,
-          "value_area": 800
+          "value_area": 1000
         }
       },
       "color": {
@@ -41,7 +41,7 @@ particlesJS('snow-fall',
         }
       },
       "opacity": {
-        "value": 0.8,
+        "value": 0.6,
         "random": false,
         "anim": {
           "enable": false,
@@ -71,7 +71,7 @@ particlesJS('snow-fall',
         "enable": true,
         "speed": 1.5,
         "direction": "bottom",
-        "random": false,
+        "random": true,
         "straight": false,
         "out_mode": "out",
         "attract": {
