@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  filter: blur(15px) brightness(0.3);
+  filter: blur(15px) brightness(0.5);
   transform: scale(1.05);
 }
 
@@ -132,6 +132,11 @@ body._lock {
   font-weight: 700;
   src: url(../fonts/Roboto-Bold.ttf);
 }
+@font-face {
+  font-family: "LuxoraGrotesk-Bold";
+  font-weight: 700;
+  src: url(../fonts/LuxoraGrotesk-Bold.ttf);
+}
 /* -------------------------------------------------------------------------- */
 /* -------СКРОЛ БАР------------------------------------------------------------------- */
 ::-webkit-scrollbar-thumb {
@@ -168,7 +173,7 @@ body._lock {
 }
 
 .header__logo {
-  width: 65px;
+  width: 80px;
   z-index: 3;
   position: relative;
 }
@@ -276,21 +281,19 @@ body._lock {
 
 /* -----------------------main--------------------------------------------------- */
 .main {
-  padding: 100px 0px;
+  padding: 200px 0px;
 }
 
+.main__content {
+  text-align: center;
+}
 .main__content h1 {
-  font-size: clamp(3rem, 1.162rem + 9.19vw, 9.375rem);
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: transparent;
+  font-size: 80px;
+  color: #fff;
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: "Rubik Spray Paint", cursive;
+  font-family: "LuxoraGrotesk-Bold";
 }
 .main__content h1 span {
-  color: rgb(196, 13, 171);
-}
-.main__content p {
-  color: white;
-  font-size: clamp(1.25rem, 0.89rem + 1.8vw, 2.5rem);
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */
