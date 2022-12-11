@@ -223,9 +223,28 @@ $accentColor: #003459;
     font-family: 'Roboto-Bold';
     letter-spacing: 1px;
     transition: color .3s ease;
+    position: relative;
     &:hover{
         color: $baseColor;
     }
+    
+}
+.menu__link::after{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+    background-color: $baseColor;
+}
+.menu__link:hover::after{
+    width: 100%;
+    color: $baseColor;
+}
+.menu__link:hover{
+    color: $baseColor;
 }
 
 /* -----------------------main--------------------------------------------------- */
