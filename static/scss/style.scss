@@ -6,7 +6,6 @@
     position: relative;
     z-index: 5;
     
-    
     .main{
         flex: 1 1 auto;
         height: 100%;
@@ -40,6 +39,7 @@ body{
 }
 body._lock{
     overflow: hidden;
+    
 }
 /* -------------------------------------------------------------------------- */
 #snow-fall{
@@ -178,12 +178,14 @@ $accentColor: #003459;
         z-index: 0;
         width: 100%;
         height: 100%;
-        background-color: #00000094;
+        background-color: #000000;
         padding: 100px 10px 30px 0px;
         transition: left .3s ease 0s;
+        
         overflow: auto;
         &._active{
             left: 0;
+            
         }
         &::before{
             content:"";
@@ -233,7 +235,7 @@ $accentColor: #003459;
 }
 .main__content {
     text-align: center;
-    margin-top: 25%;
+    margin-top: 40vh;
     h1{
         font-size: clamp(2.5rem, 1.779rem + 3.6vw, 5rem);
         // background-image: linear-gradient(to left, #553c9a, #b393d3);
