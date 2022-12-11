@@ -25,7 +25,7 @@
 [class*="__container"]{
     max-width: 1430px;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 body{
     font-family: 'Roboto-Bold';
@@ -89,7 +89,7 @@ $accentColor: #003459;
     height: 80px;
 }
 .header__logo {
-    width: 70px;
+    width: 65px;
     border-radius: 50%;
     z-index: 3;
     position: relative;
@@ -181,7 +181,7 @@ $accentColor: #003459;
         flex-direction: column;
     }
     .menu__list > li{
-        margin: 0px 0px 0px 60px;
+        margin: 0px 0px 0px clamp(1.875rem, 0.536rem + 6.7vw, 3.75rem);
         .menu__link{
             font-size: 25px;
         }
@@ -214,7 +214,7 @@ $accentColor: #003459;
 }
 .main__content {
     h1{
-        font-size: clamp(1.875rem, -0.287rem + 10.81vw, 9.375rem);
+        font-size: clamp(3rem, 1.162rem + 9.19vw, 9.375rem);
         background-image: linear-gradient(to left, #553c9a, #b393d3);
         color: transparent;
         background-clip: text;
@@ -226,6 +226,6 @@ $accentColor: #003459;
     }
     p{
         color: white;
-        font-size: 40px;
+        font-size: clamp(1.25rem, 0.89rem + 1.8vw, 2.5rem);
     }
 }

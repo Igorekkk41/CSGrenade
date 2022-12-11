@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 [class*=__container] {
   max-width: 1430px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 15px;
 }
 
 body {
@@ -155,7 +155,7 @@ body._lock {
 }
 
 .header__logo {
-  width: 70px;
+  width: 65px;
   border-radius: 50%;
   z-index: 3;
   position: relative;
@@ -237,7 +237,7 @@ body._lock {
     flex-direction: column;
   }
   .menu__list > li {
-    margin: 0px 0px 0px 60px;
+    margin: 0px 0px 0px clamp(1.875rem, 0.536rem + 6.7vw, 3.75rem);
   }
   .menu__list > li .menu__link {
     font-size: 25px;
@@ -268,7 +268,7 @@ body._lock {
 }
 
 .main__content h1 {
-  font-size: clamp(1.875rem, -0.287rem + 10.81vw, 9.375rem);
+  font-size: clamp(3rem, 1.162rem + 9.19vw, 9.375rem);
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
@@ -280,5 +280,5 @@ body._lock {
 }
 .main__content p {
   color: white;
-  font-size: 40px;
+  font-size: clamp(1.25rem, 0.89rem + 1.8vw, 2.5rem);
 }/*# sourceMappingURL=style.css.map */
