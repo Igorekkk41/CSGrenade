@@ -294,7 +294,7 @@ body._lock {
 }
 .main__content h1 span {
   font-size: clamp(1.563rem, 1.112rem + 2.25vw, 3.125rem);
-  font-family: "LuxoraGrotesk-Bold";
+  font-family: "Roboto-Bold";
 }
 .main__content .main__button {
   margin: 60px auto 0px auto;
