@@ -78,6 +78,8 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: hidden;
      object-fit: hidden;
   position: relative;
+  filter: brightness(0.5);
+  z-index: -2;
 }
 .intro video {
   width: 100%;
@@ -88,8 +90,6 @@ h1, h2, h3, h4, h5, h6 {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  filter: blur(15px) brightness(0.5);
-  transform: scale(1.05);
 }
 
 /* -------------------------------------------------------------------------- */
@@ -281,19 +281,83 @@ body._lock {
 
 /* -----------------------main--------------------------------------------------- */
 .main {
-  padding: 200px 0px;
+  padding: clamp(9.375rem, 8.474rem + 4.5vw, 12.5rem) 0px 0px 0px;
 }
 
 .main__content {
   text-align: center;
 }
 .main__content h1 {
-  font-size: 80px;
+  font-size: clamp(2.5rem, 1.779rem + 3.6vw, 5rem);
   color: #fff;
+  line-height: 25px;
   background-clip: text;
   -webkit-background-clip: text;
   font-family: "LuxoraGrotesk-Bold";
 }
 .main__content h1 span {
-  font-size: 50px;
+  font-size: clamp(1.563rem, 1.112rem + 2.25vw, 3.125rem);
+}
+.main__content .main__button {
+  margin: 60px auto 0px auto;
+  padding: 13px 100px;
+  font-size: clamp(1.688rem, 1.531rem + 0.78vw, 2.188rem);
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+  /* color: #23252f; */
+  overflow: hidden;
+  border-radius: 5px;
+  font-family: "Roboto-Bold";
+  background-color: transparent;
+  transition: background 0.5s, color 0.5s;
+  -webkit-box-reflect: below 30px linear-gradient(transparent, rgba(100, 237, 132, 0.1647058824));
+}
+.main__content .main__button:hover {
+  background: #64ed85;
+  box-shadow: 0 0 40px #64ed85;
+  color: #23252f;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.main__content .main__button a:active {
+  box-shadow: 0 0 20px #64ed85;
+  filter: hue-rotate(40deg);
+}
+.main__content .main__button::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-top: 3.5px solid #64ed85;
+  border-left: 3.5px solid #64ed85;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main__content .main__button:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.main__content .main__button::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 3.5px solid #64ed85;
+  border-right: 3.5px solid #64ed85;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main__content .main__button:hover::before {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 767.9px) {
+  .main__content .main__button {
+    width: 90%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
