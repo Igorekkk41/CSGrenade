@@ -282,7 +282,10 @@ body._lock {
 /* -----------------------main--------------------------------------------------- */
 .main__content {
   text-align: center;
-  margin-top: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 .main__content h1 {
   font-size: clamp(2.5rem, 1.779rem + 3.6vw, 5rem);
