@@ -21,6 +21,3 @@ def send_mail(text):
     server.send_message(msg)
     server.quit()
 
-
-
-send_mail('Hello, this is test notification!')

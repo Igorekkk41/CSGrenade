@@ -15,6 +15,7 @@
 '''
 
 from flask import Flask, render_template
+from feedback_mail import send_mail
 
 app = Flask(__name__)
 
