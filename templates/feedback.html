@@ -44,14 +44,14 @@
 
                             </div>
                         </div>
-                        <form action="#" class="feedback__form">
-                            <input type="text" required class="feedback__input-name placeholder-style" id="label-for-name">
+                        <form action="#" method="post" class="feedback__form">
+                            <input name="name" type="text" required class="feedback__input-name placeholder-style" id="label-for-name">
                             <label for="label-for-name" class="label-for-input for-name">Ваше имя</label>
 
-                            <input type="text" required class="feedback__input-email placeholder-style" id="label-for-email">
+                            <input name="email" type="text" required class="feedback__input-email placeholder-style" id="label-for-email">
                             <label for="label-for-email" class="label-for-input for-email">Ваш Email</label>
 
-                            <textarea name="" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
                             <button class="feedback__button">Отправить</button>
                         </form>
                     </div>
