@@ -127,6 +127,9 @@ body._lock {
   height: 100vh;
   z-index: 0;
 }
+#snow-fall._feedback {
+  z-index: 10;
+}
 
 /* -----------------------FONTS--------------------------------------------------- */
 @font-face {
