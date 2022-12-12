@@ -107,6 +107,15 @@ body {
   overflow: hidden;
 }
 
+.feedback-body {
+  overflow: hidden;
+}
+@media (max-width: 767.9px) {
+  .feedback-body {
+    overflow-y: auto;
+  }
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -389,7 +398,7 @@ body._lock {
 
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
-  background: radial-gradient(circle, rgb(2, 126, 167) 0%, rgb(0, 52, 89) 90%);
+  background: radial-gradient(circle, rgb(0, 52, 89) 0%, rgb(2, 126, 167) 90%);
 }
 @media (max-width: 767.9px) {
   .feedback {

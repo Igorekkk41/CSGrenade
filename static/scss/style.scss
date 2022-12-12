@@ -39,6 +39,12 @@ body{
 .index-body{
     overflow: hidden;
 }
+.feedback-body{
+    overflow: hidden;
+    @media(max-width: 767.9px){
+        overflow-y: auto;
+    }
+}
 body._lock{
     overflow: hidden;
     
@@ -345,7 +351,7 @@ $accentColor: #003459;
 }
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
-    background: radial-gradient(circle, rgba(2,126,167,1) 0%, rgba(0,52,89,1) 90%);
+    background: radial-gradient(circle, rgba(0,52,89,1) 0%, rgba(2,126,167,1) 90%);
     @media(max-width: 767.9px){
         padding: 100px 0px 20px 0px;
     }
