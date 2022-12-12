@@ -370,6 +370,18 @@ $accentColor: #003459;
                     left: 150%;
                 }
             }
+            // @keyframes flasher {
+            //      0%{
+            //         background: linear-gradient(90deg, #64ed844b, #64ed841c);
+            //      }
+            //      50%{
+            //         background: linear-gradient(90deg, #1553c54b, #1553c528);
+            //      }
+            //      100%{
+            //         background: linear-gradient(90deg, #ca0e474b, #ca0e4628);
+            //      }
+            //flasher 9s infinite linear
+            // }
         }
     }
 }

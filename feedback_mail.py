@@ -9,7 +9,7 @@ def send_mail(name, contact_email, text):
     text = f'{text}\n\n{contact_email}'
 
     msg["From"] = 'CSGrenade@yandex.ru'
-    msg["To"] = 'valerayanka78@gmail.com'
+    msg["To"] = 'CSGrenade@yandex.ru'
     msg['Subject'] = f'{name} отправил отзыв!'
     msg.attach(
         MIMEText(text, 'plain')
