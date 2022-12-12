@@ -47,10 +47,10 @@
 
                             </div>
                         </div>
-                        <form action="#" class="feedback__form">
-                            <input type="text" required class="feedback__input name placeholder-style" placeholder="Ваше имя">
-                            <input type="email" required class="feedback__input email placeholder-style" placeholder="Ваш Email">
-                            <textarea name="" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
+                        <form method="post" action="#" class="feedback__form">
+                            <input type="text" name="name" required class="feedback__input name placeholder-style" placeholder="Ваше имя">
+                            <input type="email" name="email" required class="feedback__input email placeholder-style" placeholder="Ваш Email">
+                            <textarea name="message" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
                             <button class="feedback__button">Отправить</button>
                         </form>
                     </div>

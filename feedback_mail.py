@@ -4,12 +4,13 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 
-def send_mail(text):
+def send_mail(name, contact_email, text):
     msg = MIMEMultipart()
+    text = f'{text}\n\n{contact_email}'
 
     msg["From"] = 'CSGrenade@yandex.ru'
     msg["To"] = 'CSGrenade@yandex.ru'
-    msg['Subject'] = 'Feedback notification'
+    msg['Subject'] = f'{name} отправил отзыв!'
     msg.attach(
         MIMEText(text, 'plain')
     )
@@ -20,4 +21,6 @@ def send_mail(text):
     server.auth_plain()
     server.send_message(msg)
     server.quit()
+
+    return 'OK'
 
