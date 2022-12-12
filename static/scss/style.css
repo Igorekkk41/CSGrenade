@@ -340,6 +340,7 @@ body._lock {
   padding: 13px 100px;
   font-size: clamp(1.688rem, 1.531rem + 0.78vw, 2.188rem);
   position: relative;
+  overflow-x: hidden;
   text-decoration: none;
   color: #ffffff;
   /* color: #23252f; */
@@ -398,10 +399,38 @@ body._lock {
     padding-right: 0px;
   }
 }
+.main__content .main__button .main__flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 70px;
+  transform: skewX(-55deg);
+  -webkit-animation: flare 3s infinite linear;
+          animation: flare 3s infinite linear;
+  filter: blur(5px);
+  background: linear-gradient(90deg, rgba(100, 237, 132, 0.2941176471), rgba(100, 237, 132, 0.1098039216));
+}
+@-webkit-keyframes flare {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+@keyframes flare {
+  0% {
+    left: -150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
 
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
   background: radial-gradient(circle, rgb(2, 126, 167) 0%, rgb(0, 52, 89) 90%);
+  background-blend-mode: multiply;
 }
 @media (max-width: 767.9px) {
   .feedback {

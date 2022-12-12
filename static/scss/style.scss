@@ -291,6 +291,7 @@ $accentColor: #003459;
         padding: 13px 100px;
         font-size: clamp(1.688rem, 1.531rem + 0.78vw, 2.188rem);
         position: relative;
+        overflow-x: hidden;
         text-decoration: none;
         color: #ffffff;
         /* color: #23252f; */
@@ -351,11 +352,30 @@ $accentColor: #003459;
             padding-left: 0px;
             padding-right: 0px;
         }
+        & .main__flare{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 70px;
+            transform: skewX(-55deg);
+            animation: flare 3s infinite linear;
+            filter: blur(5px);
+            background: linear-gradient(90deg, #64ed844b, #64ed841c);
+            @keyframes flare {
+                0% {
+                    left: -150%;
+                }
+                100%{
+                    left: 150%;
+                }
+            }
+        }
     }
 }
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
     background: radial-gradient(circle, rgba(2,126,167,1) 0%, rgba(0,52,89,1) 90%);
+    background-blend-mode: multiply;
     @media(max-width: 767.9px){
         padding: 100px 0px 20px 0px;
     }
