@@ -38,16 +38,20 @@
                         <div class="feedback__text">
                             <h2>Контакты</h2>
                             <h3 id="email-title">E-Mail:</h3>
-                            <p for="email-title feedback__label">CSGrenade@yandex.ru</p>
+                            <p for="email-title feedback__label">studio@gmail.com</p>
 
                             <div class="social-networks">
 
                             </div>
                         </div>
-                        <form method="post" action="#" class="feedback__form">
-                            <input type="text" name="name" required class="feedback__input name placeholder-style" placeholder="Ваше имя">
-                            <input type="email" name="email" required class="feedback__input email placeholder-style" placeholder="Ваш Email">
-                            <textarea name="message" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
+                        <form action="#" class="feedback__form">
+                            <input type="text" required class="feedback__input-name placeholder-style" id="label-for-name">
+                            <label for="label-for-name" class="label-for-input for-name">Ваше имя</label>
+
+                            <input type="text" required class="feedback__input-email placeholder-style" id="label-for-email">
+                            <label for="label-for-email" class="label-for-input for-email">Ваш Email</label>
+
+                            <textarea name="" id="" cols="30" rows="10" class="feedback__textarea message placeholder-style" required placeholder="Сообщение"></textarea>
                             <button class="feedback__button">Отправить</button>
                         </form>
                     </div>

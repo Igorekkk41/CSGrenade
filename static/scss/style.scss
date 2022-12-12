@@ -431,7 +431,6 @@ $accentColor: #003459;
     }
     p{
         text-align: left;
-        margin-bottom: 30px;
         font-size: 15px;
     }
 }
@@ -439,11 +438,12 @@ $accentColor: #003459;
     display: flex;
     flex-direction: column;
     width: 500px;
+    position: relative;
     @media(max-width: 767.9px){
         width: 100%;
     }
 }
-.feedback__input {
+.feedback__input-name, .feedback__input-email{
     border-bottom: 1px solid #000;
     font-family: 'Roboto-Medium';
     height: 50px;
@@ -452,7 +452,42 @@ $accentColor: #003459;
     background-color: transparent;
     color: white;
     max-width: 100%;
+    position: relative;
+    padding-top: 10px;
 }
+
+.label-for-input{
+    
+}
+.for-name{
+    top: 15px;
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+    transition: top 0.2s;
+    color: rgb(255, 255, 255);
+}
+.feedback__input-name:focus ~ .for-name, .feedback__input-name:valid ~ .for-name{
+    top: 0px;
+    font-size: 15px;
+    color: #16d142;
+}
+.for-email{
+    top: 85px;
+    position: absolute;
+    left: 0;
+    font-size: 17px;
+    transition: top 0.2s;
+    color: rgb(255, 255, 255);
+}
+.feedback__input-email:focus ~ .for-email, .feedback__input-email:valid ~ .for-email{
+    top: 70px;
+    font-size: 15px;
+    color: #16d142;
+}
+
+
+
 .placeholder-style::placeholder{
     color: white;
 }
