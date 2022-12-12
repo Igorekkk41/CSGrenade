@@ -43,6 +43,7 @@ body{
     overflow: hidden;
     @media(max-width: 767.9px){
         overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 body._lock{
@@ -376,6 +377,7 @@ $accentColor: #003459;
 .feedback {
     background: radial-gradient(circle, rgba(2,126,167,1) 0%, rgba(0,52,89,1) 90%);
     background-blend-mode: multiply;
+    
     @media(max-width: 767.9px){
         padding: 100px 0px 20px 0px;
     }
@@ -384,11 +386,13 @@ $accentColor: #003459;
     text-align: center;
 }
 .feedback__content{
-    height: calc(100vh - 70px);
-    
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media(max-width: 767.9px){
+        height: 100%;
+    }
 
     h1{
         font-size: clamp(1.875rem, 1.154rem + 3.6vw, 4.375rem);
@@ -485,12 +489,16 @@ $accentColor: #003459;
     font-size: 15px;
     color: #16d142;
 }
-
-
-
 .placeholder-style::placeholder{
     color: white;
 }
+
+// .feedback__input-style:auto-fill:-webkit-autofill,
+//     input:-webkit-autofill:hover, 
+//     input:-webkit-autofill:focus {
+//     -webkit-text-fill-color: #e0e0e000;
+//     -webkit-box-shadow: 0 0 0px 40rem rgba(255, 255, 255, 0) inset;
+// }
 .name {
 }
 .email {
@@ -504,23 +512,29 @@ $accentColor: #003459;
     resize: none;
     height: 100px;
 }
-.feedback__button{
-    width: 200px;
-    margin-left: auto;
-    margin-top: 20px;
-    padding: 15px 50px;
-    text-align: center;
-    border-radius: 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: 'Roboto-Bold';
-    @media(max-width: 767.9px){
-        &{
-            width: 100%;
-        }
-    }
-}
+// .feedback__button{
+//     width: 200px;
+//     margin-left: auto;
+//     margin-top: 20px;
+//     padding: 15px 50px;
+//     text-align: center;
+//     border-radius: 20px;
+//     font-size: 14px;
+//     text-transform: uppercase;
+//     font-weight: bold;
+//     font-family: 'Roboto-Bold';
+//     @media(max-width: 767.9px){
+//         &{
+//             width: 100%;
+//         }
+//     }
+// }
+/* Both states */
+/* Running state */
+/* Done state */
+
+
+
 .message {
 }
 /* -------------------------------------------------------------------------- */
