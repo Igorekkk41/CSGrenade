@@ -387,7 +387,7 @@ $accentColor: #003459;
 }
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
-    background: url();
+
 }
 .feedback__content {
     height: 100vh;
@@ -425,6 +425,8 @@ $accentColor: #003459;
 .feedback__textarea {
     resize: vertical;
     height: 100px;
+    max-height: 160px;
+    min-height: 50px;
 }
 .feedback__button {
     padding: 20px 40px;

@@ -429,10 +429,6 @@ body._lock {
 }
 
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
-.feedback {
-  background: url();
-}
-
 .feedback__content {
   height: 100vh;
   display: flex;
@@ -473,6 +469,8 @@ body._lock {
 .feedback__textarea {
   resize: vertical;
   height: 100px;
+  max-height: 160px;
+  min-height: 50px;
 }
 
 .feedback__button {
