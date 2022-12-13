@@ -35,10 +35,10 @@
                 <div class="feedback__content">
                     <div class="feedback__box">
                         <h1>Напишите нам</h1>
-                        <form action="" class="feedback__form">
-                            <input type="text" class="feedback__input" placeholder="Имя" required>
-                            <input type="text" class="feedback__input"placeholder="Email" required>
-                            <textarea name="" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение"></textarea>
+                        <form method="post" action="" class="feedback__form">
+                            <input name="name" type="text" class="feedback__input" placeholder="Имя" required>
+                            <input name="email" type="text" class="feedback__input"placeholder="Email" required>
+                            <textarea name="message" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение"></textarea>
                             <button class="feedback__button">Отправить</button>
                         </form>
                     </div>
