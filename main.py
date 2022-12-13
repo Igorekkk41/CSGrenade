@@ -36,11 +36,16 @@ def feedback():
 
         try:
             send_mail(name, email, message)
-            return redirect('/')
+            return redirect('/successfully')
         except:
             return 'Error with sending message!'
     else:
         return render_template('feedback.html')
+
+
+@app.route('/successfully')
+def successfully():
+    return render_template('successfully.html')
 
 
 if __name__ == '__main__':
