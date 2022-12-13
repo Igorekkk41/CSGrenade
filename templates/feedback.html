@@ -8,6 +8,9 @@
     <title>CSGranade</title>
 </head>
 <body class="feedback-body">
+    <div class="intro">
+        <video src="../static/video/background_feedback.mov" muted autoplay loop></video>
+    </div>
     <div id="snow-fall ._feedback"></div>
     <div class="wrapper">
         <header id="header" class="header" style="background-color: #000;">
@@ -37,8 +40,8 @@
                         <form action="" class="feedback__form">
                             <input type="text" class="feedback__input" placeholder="Имя" required>
                             <input type="text" class="feedback__input"placeholder="Email" required>
-                            <textarea name="" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение"></textarea>
-                            <button class="feedback__button">Отправить</button>
+                            <textarea name="" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение" required></textarea>
+                            <input class="feedback__button" type="submit"></input>
                         </form>
                     </div>
                 </div>
