@@ -430,152 +430,64 @@ body._lock {
 
 /* ----------------------ОБРАТНАЯ СВЯЗЬ---------------------------------------------------- */
 .feedback {
-  background: radial-gradient(circle, rgb(2, 126, 167) 0%, rgb(0, 52, 89) 90%);
-  background-blend-mode: multiply;
-}
-@media (max-width: 767.9px) {
-  .feedback {
-    padding: 100px 0px 20px 0px;
-  }
-}
-
-.feedback__content > h1, p {
-  text-align: center;
+  background: url();
 }
 
 .feedback__content {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-}
-@media (max-width: 767.9px) {
-  .feedback__content {
-    height: 100%;
-  }
-}
-.feedback__content h1 {
-  font-size: clamp(1.875rem, 1.154rem + 3.6vw, 4.375rem);
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 40px;
-  text-shadow: 2px 4px 10px black;
-}
-.feedback__content p {
-  font-size: 16px;
-  color: #fff;
+  align-items: center;
 }
 
 .feedback__box {
-  display: flex;
-  justify-content: center;
-  gap: 70px;
+  text-align: center;
+  background-color: #fff;
+  padding: 72px 55px 35px 55px;
+  border-radius: 25px;
+  width: 790px;
 }
-@media (max-width: 768.9px) {
+@media (max-width: 767.9px) {
   .feedback__box {
-    flex-direction: column-reverse;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 42px 25px 60px 25px;
   }
 }
-
-.feedback__text {
-  color: #fff;
-}
-.feedback__text h2 {
-  font-size: 22px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-.feedback__text h3 {
-  font-size: 18px;
-  font-weight: 500;
-}
-.feedback__text p {
-  text-align: left;
-  font-size: 15px;
+.feedback__box h1 {
+  font-size: clamp(2.5rem, 2.14rem + 1.8vw, 3.75rem);
+  margin-bottom: 50px;
 }
 
 .feedback__form {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  position: relative;
-}
-@media (max-width: 767.9px) {
-  .feedback__form {
-    width: 100%;
-  }
+  gap: 30px;
 }
 
-.feedback__input-name, .feedback__input-email {
-  border-bottom: 1px solid #000;
-  font-family: "Roboto-Medium";
-  height: 50px;
-  margin-bottom: 20px;
-  font-size: 16px;
-  background-color: transparent;
-  color: white;
+.feedback__input {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.466);
+  height: 45px;
   max-width: 100%;
-  position: relative;
-  padding-top: 10px;
-}
-
-.for-name {
-  top: 15px;
-  position: absolute;
-  left: 0;
-  font-size: 17px;
-  transition: top 0.2s;
-  color: rgb(255, 255, 255);
-}
-
-.feedback__input-name:focus ~ .for-name, .feedback__input-name:valid ~ .for-name {
-  top: 0px;
-  font-size: 15px;
-  color: #16d142;
-}
-
-.for-email {
-  top: 85px;
-  position: absolute;
-  left: 0;
-  font-size: 17px;
-  transition: top 0.2s;
-  color: rgb(255, 255, 255);
-}
-
-.feedback__input-email:focus ~ .for-email, .feedback__input-email:valid ~ .for-email {
-  top: 70px;
-  font-size: 15px;
-  color: #16d142;
-}
-
-.placeholder-style::-moz-placeholder {
-  color: white;
-}
-
-.placeholder-style:-ms-input-placeholder {
-  color: white;
-}
-
-.placeholder-style::placeholder {
-  color: white;
+  font-size: 13px;
 }
 
 .feedback__textarea {
-  border-bottom: 1px solid #000;
-  font-family: "Roboto-Medium";
-  background-color: transparent;
-  font-size: 16px;
-  color: #fff;
-  resize: none;
+  resize: vertical;
   height: 100px;
 }
 
-/* Both states */
-/* Running state */
-/* Done state */
-/* -------------------------------------------------------------------------- *//*# sourceMappingURL=style.css.map */
+.feedback__button {
+  padding: 20px 40px;
+  background-color: red;
+  width: 250px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (max-width: 767.9px) {
+  .feedback__button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
