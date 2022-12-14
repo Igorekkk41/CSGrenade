@@ -144,7 +144,7 @@ main {
 }
 .upload__feedback {
 	color: hsl(var(--hue),10%,5%);
-	margin-bottom: 4.5em;
+	margin-bottom: 3em;
 }
 .upload__feedback,
 .upload__feedback + .upload__button {

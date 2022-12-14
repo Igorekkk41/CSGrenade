@@ -441,9 +441,15 @@ body._lock {
   align-items: center;
 }
 
+.feedback__box * {
+  position: relative;
+}
+
 .feedback__box {
   text-align: center;
-  background-color: #fff;
+  position: relative;
+  box-shadow: 1px 1px 20px rgba(14, 14, 14, 0.3);
+  background-color: inherit;
   padding: 72px 55px 35px 55px;
   border-radius: 25px;
   width: 790px;
@@ -456,6 +462,21 @@ body._lock {
 .feedback__box h1 {
   font-size: clamp(1.875rem, 1.334rem + 2.7vw, 3.75rem);
   margin-bottom: 50px;
+  text-shadow: 5px 5px 10px rgba(14, 14, 14, 0.3);
+}
+
+.feedback__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.705);
+  border-radius: 25px;
+  filter: blur(4px);
 }
 
 .feedback__form {
@@ -465,10 +486,23 @@ body._lock {
 }
 
 .feedback__input {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.466);
+  background-color: inherit;
+  border-bottom: 2px solid rgb(0, 0, 0);
   height: 45px;
   max-width: 100%;
-  font-size: 13px;
+  font-size: 15px;
+}
+
+.feedback__input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.feedback__input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.671);
+}
+
+.feedback__input::placeholder {
+  color: rgba(0, 0, 0, 0.671);
 }
 
 .feedback__textarea {
