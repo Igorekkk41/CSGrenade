@@ -20,6 +20,11 @@ from feedback_mail import send_mail
 app = Flask(__name__)
 
 
+@app.errorhandler(404)
+def not_found_page(e):
+    return render_template('not_found.html')
+
+
 @app.route("/")
 @app.route("/home")
 @app.route("/index")
@@ -36,16 +41,11 @@ def feedback():
 
         try:
             send_mail(name, email, message)
-            return redirect('/successfully')
+            return render_template('successfully.html')
         except:
             return 'Error with sending message!'
     else:
         return render_template('feedback.html')
-
-
-@app.route('/successfully')
-def successfully():
-    return render_template('successfully.html')
 
 
 if __name__ == '__main__':
