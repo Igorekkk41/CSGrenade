@@ -289,6 +289,12 @@ body._lock {
   letter-spacing: 1px;
   transition: color 0.3s ease;
   position: relative;
+  padding: 25px 0px;
+}
+@media (max-width: 767.9px) {
+  .menu__link {
+    padding: 5px 0px;
+  }
 }
 .menu__link:hover {
   color: #027EA7;
