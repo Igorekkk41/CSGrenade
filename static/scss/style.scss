@@ -450,6 +450,7 @@ $accentColor: #003459;
 }
 .validate__input{
     position: relative;
+    
     .focus__input{
         position: absolute;
         top: 0;
@@ -467,20 +468,75 @@ $accentColor: #003459;
         left: 0;
         bottom: 0;
         background-color: red;
-        transition: all .4s ease;
+        transition: all 0.8s ease;
+    }
+    .focus__input::after{
+        content: attr(data-placeholder);
+        position: absolute;
+        top: 13px;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    & .feedback__input:focus ~ .focus__input::before{
+        width: 100%;
+    }
+    & .feedback__input:focus ~ .focus__input::after{
+        top: -5px;
+        font-size: 13px;
+        color: #7c7c7c;
+    }
+    & .feedback__input:valid ~ .focus__input::after{
+        top: -5px;
+        font-size: 13px;
+        color: #7c7c7c;
+    }
+    .focus__input2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+    }
+    .focus__input2::before{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 2px;
+        left: 0;
+        bottom: 4px;
+        background-color: red;
+        transition: all 0.8s ease;
+    }
+    .focus__input2::after{
+        content: attr(data-placeholder);
+        position: absolute;
+        top: 13px;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    & .feedback__input:focus ~ .focus__input2::before{
+        width: 100%;
+    }
+    & .feedback__input:focus ~ .focus__input2::after{
+        top: -15px;
+        font-size: 13px;
+        color: #7c7c7c;
+    }
+    & .feedback__input:valid ~ .focus__input2::after{
+        top: -15px;
+        font-size: 13px;
+        color: #7c7c7c;
     }
 }
+
 .feedback__input {
     background-color: inherit;
-    border-bottom: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid #727171;
     height: 45px;
-    // max-width: 100%;
     width: 100%;
     font-size: 15px;
-    // text-transform: uppercase;
-    // background-color: rgba(0, 0, 0, 0.2);
-    
-    
 }
 
 
