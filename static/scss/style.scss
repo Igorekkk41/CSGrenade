@@ -467,7 +467,7 @@ $accentColor: #003459;
         height: 2px;
         left: 0;
         bottom: 0;
-        background-color: red;
+        background-color: $baseColor;
         transition: all 0.8s ease;
     }
     .focus__input::after{
@@ -483,12 +483,12 @@ $accentColor: #003459;
     & .feedback__input:focus ~ .focus__input::after{
         top: -5px;
         font-size: 13px;
-        color: #7c7c7c;
+        color: $baseColor;
     }
     & .feedback__input:valid ~ .focus__input::after{
         top: -5px;
         font-size: 13px;
-        color: #7c7c7c;
+        color: $baseColor;
     }
     .focus__input2{
         position: absolute;
@@ -506,7 +506,7 @@ $accentColor: #003459;
         height: 2px;
         left: 0;
         bottom: 4px;
-        background-color: red;
+        background-color: $baseColor;
         transition: all 0.8s ease;
     }
     .focus__input2::after{
@@ -522,12 +522,12 @@ $accentColor: #003459;
     & .feedback__input:focus ~ .focus__input2::after{
         top: -15px;
         font-size: 13px;
-        color: #7c7c7c;
+        color: $baseColor;
     }
     & .feedback__input:valid ~ .focus__input2::after{
         top: -15px;
         font-size: 13px;
-        color: #7c7c7c;
+        color: $baseColor;
     }
 }
 

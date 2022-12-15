@@ -513,7 +513,7 @@ body._lock {
   height: 2px;
   left: 0;
   bottom: 0;
-  background-color: red;
+  background-color: #027EA7;
   transition: all 0.8s ease;
 }
 .validate__input .focus__input::after {
@@ -529,12 +529,12 @@ body._lock {
 .validate__input .feedback__input:focus ~ .focus__input::after {
   top: -5px;
   font-size: 13px;
-  color: #7c7c7c;
+  color: #027EA7;
 }
 .validate__input .feedback__input:valid ~ .focus__input::after {
   top: -5px;
   font-size: 13px;
-  color: #7c7c7c;
+  color: #027EA7;
 }
 .validate__input .focus__input2 {
   position: absolute;
@@ -552,7 +552,7 @@ body._lock {
   height: 2px;
   left: 0;
   bottom: 4px;
-  background-color: red;
+  background-color: #027EA7;
   transition: all 0.8s ease;
 }
 .validate__input .focus__input2::after {
@@ -568,12 +568,12 @@ body._lock {
 .validate__input .feedback__input:focus ~ .focus__input2::after {
   top: -15px;
   font-size: 13px;
-  color: #7c7c7c;
+  color: #027EA7;
 }
 .validate__input .feedback__input:valid ~ .focus__input2::after {
   top: -15px;
   font-size: 13px;
-  color: #7c7c7c;
+  color: #027EA7;
 }
 
 .feedback__input {
