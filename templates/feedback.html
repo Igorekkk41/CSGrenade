@@ -22,10 +22,10 @@
                     </div>
                     <nav class="menu__body">
                         <ul class="menu__list">
+                            <li><a class="menu__link" data-goto="" href="#">Главная</a></li>
                             <li><a class="menu__link" data-goto="" href="#">Карты</a></li>
-                            <li><a class="menu__link" data-goto="" href="#">Наши работы</a></li>
                             <li><a class="menu__link" data-goto="" href="#">Контакты</a></li>
-                            <li><a class="menu__link" data-goto="" href="feedback">Обратная связь</a></li>
+                            <li><a class="menu__link link__on-page" data-goto="" href="feedback">Обратная связь</a></li>
                         </ul>
                     </nav>           
                 </div>       
@@ -36,13 +36,25 @@
             <div class="__container">
                 <div class="feedback__content">
                     <div class="feedback__box">
-                                <h1>Напишите нам</h1>
-                                <form action="" method="post" class="feedback__form">
-                                    <input name="name" type="text" class="feedback__input" placeholder="Имя" required>
-                                    <input name="email" type="text" class="feedback__input"placeholder="Email" required>
-                                    <textarea name="message" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение" required></textarea>
-                                    <input class="feedback__button" type="submit"></input>
-                                </form>
+                        <h1>Напишите нам</h1>
+                        <form action="" method="post" class="feedback__form">
+                            
+                            <div class="validate__input">
+                                <input name="name" type="text" class="feedback__input" placeholder="Имя" required>
+                                <span class="focus__input"></span>
+                            </div>
+
+                            <div class="validate__input">
+                                <input name="email" type="text" class="feedback__input"placeholder="Email" required>
+                                <span class="focus__input"></span>
+                            </div>
+
+                            <div class="validate__input">
+                                <textarea name="message" id="" cols="30" rows="10" class="feedback__input feedback__textarea" placeholder="Сообщение" required></textarea>
+                                <span class="focus__input2"></span>
+                            </div>
+                            <input class="feedback__button" type="submit"></input>
+                        </form>
                     </div>
                 </div>
             </div>
