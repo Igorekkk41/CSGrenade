@@ -11,7 +11,7 @@
     <div class="intro">
         <video src="../static/video/background_feedback.mov" muted autoplay loop></video>
     </div>
-    <div id="snow-fall ._feedback"></div>
+    <div id="snow-fall" class="snow-fall ._feedback"></div>
     <div class="wrapper">
         <header id="header" class="header" style="background-color: #000;">
         <div class="header__container">
@@ -45,15 +45,20 @@
                             </div>
 
                             <div class="validate__input">
-                                <input name="email" type="text" class="feedback__input"  required>
+                                <input name="email" type="text" class="feedback__input" required>
                                 <span class="focus__input" data-placeholder="Email"></span>
                             </div>
 
                             <div class="validate__input">
-                                <textarea name="message" id="" cols="30" rows="10" class="feedback__input feedback__textarea"  required></textarea>
+                                <textarea name="message" id="" cols="30" rows="10" class="feedback__input feedback__textarea" required ></textarea>
                                 <span class="focus__input2" data-placeholder="Сообщение"></span>
                             </div>
-                            <input class="feedback__button" type="submit"></input>
+                            <input class="feedback__button" type="submit">
+                                <div class="button__text">Отправить</div>
+                                <span class="button__glow">
+                                    <span class="button__color"></span>
+                                </span>
+                            </input>
                         </form>
                     </div>
                 </div>
