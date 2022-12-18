@@ -77,7 +77,7 @@ particlesJS('snow-fall',
         "attract": {
           "enable": false,
           "rotateX": 600,
-          "rotateY": 1200
+          "rotateY": 100
         }
       }
     },

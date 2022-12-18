@@ -116,6 +116,11 @@ body {
   }
 }
 
+.maps-body {
+  overflow-y: auto;
+  background-color: #000000;
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -617,4 +622,87 @@ body._lock {
   .feedback__button {
     width: 100%;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* ------------------КАРТЫ-------------------------------------------------------- */
+.maps {
+  padding: clamp(1.875rem, 0.614rem + 6.31vw, 6.25rem) 0px;
+}
+
+.card-grid {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.card {
+  list-style: none;
+  position: relative;
+  height: 220px;
+}
+
+.card:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+
+.card__background {
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover .card:not(:hover) .card__background {
+  filter: brightness(0.6) saturate(1) contrast(1.2) blur(10px);
+}
+
+.card__content {
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  top: 0;
+}
+
+.card__category {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card__heading {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1.4;
+}
+
+/* -------------------------------------------------------------------------- *//*# sourceMappingURL=style.css.map */
