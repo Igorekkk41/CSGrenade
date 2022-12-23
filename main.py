@@ -48,6 +48,11 @@ def feedback():
         return render_template('feedback.html')
 
 
+@app.route('/maps')
+def maps():
+    return render_template('maps.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
