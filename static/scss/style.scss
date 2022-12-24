@@ -19,14 +19,13 @@
     
     video{
         width: 100%;
-        height: 120vh;
-        position: absolute;
+        height: 101vh;
+        position: fixed;
         top: 0;
         left: 0;
         object-fit: cover;
         z-index: -1;
         @media(max-width: 767.9px){
-            
         }
     }
 }
@@ -283,7 +282,7 @@ $accentColor: #003459;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: hidden;
     // margin-top: clamp(1.875rem, 1.679rem + 0.98vh, 2.5rem);
     h1{
@@ -578,8 +577,14 @@ $accentColor: #003459;
   
   .maps{
     padding: clamp(1.875rem, 0.614rem + 6.31vw, 6.25rem) 0px;
+    .maps__title{
+        text-shadow: 2px 2px 20px rgb(0,0,0);
+        line-height: 1.4;
+        font-size: 45px;
+        margin: 20px 0px;
+        color: #fff;
+    }
   }
-  
   .card-grid{
     display: grid;
     align-content: center;
@@ -598,14 +603,14 @@ $accentColor: #003459;
   
   @media(min-width: 768px){
     .card-grid{
-      grid-template-columns: repeat(2, 1fr); 
+      grid-template-columns: repeat(3, 1fr); 
     }
   }
   
   .card{
     list-style: none;
     position: relative;
-    height: 220px;
+    height: clamp(10.625rem, 9.724rem + 4.5vw, 13.75rem);
   }
   
   .card:before{
@@ -657,7 +662,7 @@ $accentColor: #003459;
   .card__heading{
     color: $text-lighter;
     font-size: 1.9rem;
-    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    text-shadow: 2px 2px 20px rgb(0,0,0);
     line-height: 1.4;
     // word-spacing: 100vw;
   }
